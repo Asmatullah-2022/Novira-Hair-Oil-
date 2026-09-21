@@ -20,13 +20,11 @@ export default function About() {
             About Novira
           </span>
           <h2 className="section-heading mt-3 text-novira-black">
-            Elegant, Everyday Hair Care
+            Simple Hair Care. Premium Experience.
           </h2>
           <p className="mt-5 text-base text-novira-black/70 sm:text-lg">
-            Novira Hair Oil is focused on bringing premium-looking,
-            natural-inspired hair care to everyday routines. Our goal is
-            simple — provide a quality hair oil with an elegant experience
-            from the product bottle to the customer.
+            Novira Hair Oil is designed to bring a simple, natural-inspired
+            hair-care experience into your everyday routine.
           </p>
         </div>
       </div>

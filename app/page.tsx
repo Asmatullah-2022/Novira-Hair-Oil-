@@ -1,16 +1,16 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import BrandIntro from "@/components/BrandIntro";
+import TrustStrip from "@/components/TrustStrip";
 import Products from "@/components/Products";
 import WhyNovira from "@/components/WhyNovira";
 import Benefits from "@/components/Benefits";
 import HowToUse from "@/components/HowToUse";
-import Gallery from "@/components/Gallery";
 import About from "@/components/About";
-import Trust from "@/components/Trust";
-import OrderCTA from "@/components/OrderCTA";
 import OrderForm from "@/components/OrderForm";
+import FAQ from "@/components/FAQ";
+import Trust from "@/components/Trust";
 import Contact from "@/components/Contact";
+import OrderCTA from "@/components/OrderCTA";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
@@ -20,17 +20,17 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <BrandIntro />
+        <TrustStrip />
         <Products />
         <WhyNovira />
         <Benefits />
         <HowToUse />
-        <Gallery />
         <About />
-        <Trust />
-        <OrderCTA />
         <OrderForm />
+        <FAQ />
+        <Trust />
         <Contact />
+        <OrderCTA />
       </main>
       <Footer />
       <WhatsAppFloat />

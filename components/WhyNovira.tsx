@@ -7,18 +7,18 @@ const cards = [
     text: "An elegant, premium-feel product from bottle to formula.",
   },
   {
+    icon: Users,
+    title: "For All Hair Types",
+    text: "Designed to work as part of any hair care routine.",
+  },
+  {
     icon: Leaf,
     title: "Natural-Inspired Formula",
     text: "Pure and organic, made without harsh chemicals.",
   },
   {
-    icon: Users,
-    title: "Suitable for All Hair Types",
-    text: "Designed to work as part of any hair care routine.",
-  },
-  {
     icon: CalendarCheck,
-    title: "Made for Everyday Hair Care",
+    title: "Easy Everyday Hair Care",
     text: "A simple addition to your daily or weekly routine.",
   },
 ];

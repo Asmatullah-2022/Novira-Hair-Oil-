@@ -20,7 +20,7 @@ export const siteConfig = {
   intlWhatsapp: "+92 343 2646758",
   title: "Novira Hair Oil | Premium Hair Care",
   description:
-    "Discover Novira Hair Oil — premium hair care for all hair types. Order Novira Hair Oil directly through WhatsApp.",
+    "Discover Novira Hair Oil 120 ml. Premium hair care for all hair types. Order directly through WhatsApp.",
 };
 
 export const products: Product[] = [
@@ -38,13 +38,6 @@ export const products: Product[] = [
   },
 ];
 
-export const galleryImages = [
-  {
-    src: "/images/products/novira-120ml.jpg",
-    alt: "Novira Hair Oil 120ml bottle",
-  },
-];
-
 export const heroImage = {
   src: "/images/products/novira-120ml.jpg",
   alt: "Novira Hair Oil 120ml bottle — premium hair care",
@@ -53,8 +46,9 @@ export const heroImage = {
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Our Products", href: "#products" },
+  { label: "Product", href: "#products" },
   { label: "Benefits", href: "#benefits" },
   { label: "How to Use", href: "#how-to-use" },
+  { label: "Order", href: "#order" },
   { label: "Contact", href: "#contact" },
 ];

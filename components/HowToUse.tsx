@@ -29,13 +29,13 @@ export default function HowToUse() {
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3">
           {steps.map((step) => (
-            <div key={step.number} className="reveal relative text-center">
-              <span className="font-display text-6xl font-bold text-novira-gold/25 sm:text-7xl">
+            <div key={step.number} className="reveal flex flex-col items-center text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-novira-gold bg-novira-black font-display text-xl font-bold text-novira-gold shadow-gold">
                 {step.number}
-              </span>
-              <h3 className="-mt-6 font-display text-xl font-semibold text-novira-cream sm:text-2xl">
+              </div>
+              <h3 className="mt-5 font-display text-xl font-semibold text-novira-cream sm:text-2xl">
                 {step.title}
               </h3>
               <p className="mx-auto mt-3 max-w-xs text-sm text-novira-cream/70 sm:text-base">

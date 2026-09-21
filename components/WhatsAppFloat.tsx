@@ -1,12 +1,12 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
-import { buildWhatsAppUrl, getOrderMessage } from "@/lib/whatsapp";
+import { buildWhatsAppUrl, getQuickOrderMessage } from "@/lib/whatsapp";
 
 export default function WhatsAppFloat() {
   return (
     <a
-      href={buildWhatsAppUrl(getOrderMessage())}
+      href={buildWhatsAppUrl(getQuickOrderMessage(1))}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Order Novira Hair Oil on WhatsApp"

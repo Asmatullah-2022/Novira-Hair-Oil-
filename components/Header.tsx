@@ -26,8 +26,8 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-novira-black/95 shadow-card backdrop-blur"
-          : "bg-novira-black/70 backdrop-blur-sm"
+          ? "border-b border-novira-gold/10 bg-novira-black/80 shadow-card backdrop-blur-md"
+          : "border-b border-transparent bg-novira-black/40 backdrop-blur-sm"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
@@ -38,12 +38,12 @@ export default function Header() {
           NOVIRA <span className="text-novira-gold">HAIR OIL</span>
         </a>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium uppercase tracking-wide text-novira-cream/90 transition-colors hover:text-novira-gold"
+              className="text-xs font-medium uppercase tracking-wide text-novira-cream/90 transition-colors hover:text-novira-gold xl:text-sm"
             >
               {link.label}
             </a>

@@ -86,7 +86,7 @@ export default function OrderForm() {
             Place Your Order
           </h2>
           <p className="mt-3 text-base text-novira-black/70 sm:text-lg">
-            Order Novira Hair Oil directly through WhatsApp.
+            Complete your details and continue to WhatsApp.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export default function OrderForm() {
                   htmlFor="order-name"
                   className="mb-1 block text-sm font-medium text-novira-black/80"
                 >
-                  Customer Name *
+                  Full Name *
                 </label>
                 <input
                   id="order-name"
@@ -160,7 +160,7 @@ export default function OrderForm() {
                   htmlFor="order-address"
                   className="mb-1 block text-sm font-medium text-novira-black/80"
                 >
-                  Complete Delivery Address *
+                  Complete Address *
                 </label>
                 <textarea
                   id="order-address"
@@ -244,7 +244,9 @@ export default function OrderForm() {
           </div>
 
           <div className="flex flex-col rounded-3xl border border-novira-gold/25 bg-novira-black p-6 text-novira-cream shadow-card sm:p-8">
-            <h3 className="font-display text-lg font-semibold">Order Summary</h3>
+            <h3 className="font-display text-lg font-semibold uppercase tracking-wide">
+              Your Order
+            </h3>
 
             <dl className="mt-6 space-y-3 text-sm">
               <div className="flex items-center justify-between">
