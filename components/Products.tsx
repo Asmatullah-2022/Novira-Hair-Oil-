@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
 import { products } from "@/lib/siteConfig";
-import { buildWhatsAppUrl, getProductOrderMessage } from "@/lib/whatsapp";
+import { buildWhatsAppUrl, getOrderMessage } from "@/lib/whatsapp";
 
 export default function Products() {
   return (
@@ -9,18 +9,18 @@ export default function Products() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-novira-gold">
-            Our Products
+            Our Product
           </span>
           <h2 className="section-heading mt-3 text-novira-cream">
-            Choose Your Novira Hair Oil
+            Novira Hair Oil
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mt-12 flex justify-center">
           {products.map((product) => (
             <div
               key={product.id}
-              className="reveal group flex flex-col overflow-hidden rounded-3xl border border-novira-gold/20 bg-novira-charcoal shadow-card transition-transform duration-300 hover:-translate-y-1"
+              className="reveal group flex w-full max-w-md flex-col overflow-hidden rounded-3xl border border-novira-gold/20 bg-novira-charcoal shadow-card transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="relative flex h-72 items-center justify-center bg-novira-beige/5 p-6 sm:h-80">
                 <Image
@@ -42,22 +42,27 @@ export default function Products() {
                   </span>
                 </div>
 
-                <p className="mt-3 flex-1 text-sm text-novira-cream/70 sm:text-base">
+                <p className="mt-3 text-sm text-novira-cream/70 sm:text-base">
                   {product.description}
                 </p>
 
-                {product.price ? (
-                  <p className="mt-4 font-display text-lg font-semibold text-novira-gold">
-                    {product.price}
-                  </p>
-                ) : (
-                  <p className="mt-4 text-xs uppercase tracking-wide text-novira-cream/50">
-                    Ask for current price on WhatsApp
-                  </p>
-                )}
+                <dl className="mt-5 space-y-2 rounded-2xl border border-novira-gold/15 bg-novira-black/40 p-4 text-sm">
+                  <div className="flex items-center justify-between text-novira-cream/80">
+                    <dt>Product Price</dt>
+                    <dd>Rs. {product.price.toLocaleString()}</dd>
+                  </div>
+                  <div className="flex items-center justify-between text-novira-cream/80">
+                    <dt>Delivery Charges</dt>
+                    <dd>Rs. {product.deliveryCharges.toLocaleString()}</dd>
+                  </div>
+                  <div className="flex items-center justify-between border-t border-novira-gold/15 pt-2 font-display text-base font-semibold text-novira-gold">
+                    <dt>Total</dt>
+                    <dd>Rs. {product.total.toLocaleString()}</dd>
+                  </div>
+                </dl>
 
                 <a
-                  href={buildWhatsAppUrl(getProductOrderMessage(product.size))}
+                  href={buildWhatsAppUrl(getOrderMessage())}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gold-btn mt-6 w-full"

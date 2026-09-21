@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { galleryImages } from "@/lib/siteConfig";
+import { heroImage } from "@/lib/siteConfig";
 
 export default function About() {
   return (
@@ -7,8 +7,8 @@ export default function About() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div className="reveal relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-3xl border border-novira-gold/25 bg-white shadow-card">
           <Image
-            src={galleryImages[2].src}
-            alt={galleryImages[2].alt}
+            src={heroImage.src}
+            alt={heroImage.alt}
             fill
             sizes="(max-width: 1024px) 90vw, 40vw"
             className="object-contain p-8"

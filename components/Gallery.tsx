@@ -14,11 +14,11 @@ export default function Gallery() {
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mt-12 flex justify-center">
           {galleryImages.map((image) => (
             <div
               key={image.src}
-              className="reveal group relative aspect-[3/4] overflow-hidden rounded-3xl border border-novira-gold/25 bg-white shadow-sm"
+              className="reveal group relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl border border-novira-gold/25 bg-white shadow-sm"
             >
               <Image
                 src={image.src}

@@ -2,7 +2,9 @@ export type Product = {
   id: string;
   name: string;
   size: string;
-  price: string;
+  price: number;
+  deliveryCharges: number;
+  total: number;
   description: string;
   image: string;
   alt: string;
@@ -23,45 +25,29 @@ export const siteConfig = {
 
 export const products: Product[] = [
   {
-    id: "150ml",
+    id: "120ml",
     name: "Novira Hair Oil",
-    size: "150ml",
-    price: "",
+    size: "120 ml",
+    price: 800,
+    deliveryCharges: 200,
+    total: 1000,
     description:
       "Pure & organic hair oil for daily care, suitable for all hair types.",
-    image: "/images/products/novira-150ml.jpg",
-    alt: "Novira Hair Oil 150ml bottle",
-  },
-  {
-    id: "200ml",
-    name: "Novira Hair Oil",
-    size: "200ml",
-    price: "",
-    description:
-      "Our larger size for regular use — pure, natural-inspired hair care.",
-    image: "/images/products/novira-200ml.jpg",
-    alt: "Novira Hair Oil 200ml bottle",
+    image: "/images/products/novira-120ml.jpg",
+    alt: "Novira Hair Oil 120ml bottle",
   },
 ];
 
 export const galleryImages = [
   {
-    src: "/images/products/novira-200ml.jpg",
-    alt: "Novira Hair Oil 200ml bottle",
-  },
-  {
-    src: "/images/products/novira-150ml.jpg",
-    alt: "Novira Hair Oil 150ml bottle",
-  },
-  {
-    src: "/images/products/novira-combined.jpg",
-    alt: "Novira Hair Oil 150ml and 200ml bottles",
+    src: "/images/products/novira-120ml.jpg",
+    alt: "Novira Hair Oil 120ml bottle",
   },
 ];
 
 export const heroImage = {
-  src: "/images/products/novira-200ml.jpg",
-  alt: "Novira Hair Oil premium hair care bottle",
+  src: "/images/products/novira-120ml.jpg",
+  alt: "Novira Hair Oil 120ml bottle — premium hair care",
 };
 
 export const navLinks = [

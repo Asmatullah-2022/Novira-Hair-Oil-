@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/siteConfig";
-import { buildWhatsAppUrl, getGeneralOrderMessage } from "@/lib/whatsapp";
+import { buildWhatsAppUrl, getOrderMessage } from "@/lib/whatsapp";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,7 +53,7 @@ export default function Header() {
 
         <div className="hidden lg:block">
           <a
-            href={buildWhatsAppUrl(getGeneralOrderMessage())}
+            href={buildWhatsAppUrl(getOrderMessage())}
             target="_blank"
             rel="noopener noreferrer"
             className="gold-btn"
@@ -89,7 +89,7 @@ export default function Header() {
             ))}
           </nav>
           <a
-            href={buildWhatsAppUrl(getGeneralOrderMessage())}
+            href={buildWhatsAppUrl(getOrderMessage())}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

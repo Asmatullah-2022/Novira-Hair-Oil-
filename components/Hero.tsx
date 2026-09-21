@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { heroImage, siteConfig } from "@/lib/siteConfig";
-import { buildWhatsAppUrl, getGeneralOrderMessage } from "@/lib/whatsapp";
+import { buildWhatsAppUrl, getOrderMessage } from "@/lib/whatsapp";
 
 export default function Hero() {
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <a
-              href={buildWhatsAppUrl(getGeneralOrderMessage())}
+              href={buildWhatsAppUrl(getOrderMessage())}
               target="_blank"
               rel="noopener noreferrer"
               className="gold-btn w-full sm:w-auto"

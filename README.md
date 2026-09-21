@@ -16,21 +16,19 @@ Visit http://localhost:3000.
 Almost everything you'd want to change lives in `lib/siteConfig.ts`:
 
 - `siteConfig` — brand name, WhatsApp number, page title/description
-- `products` — sizes, descriptions, images, and **prices** (currently blank — add a string like `"Rs. 1,500"` once you have pricing)
-- `galleryImages`, `heroImage` — which product photos appear where
+- `products` — size, description, image, and pricing (`price`, `deliveryCharges`, `total` in PKR)
+- `galleryImages`, `heroImage` — which product photo appears where
 - `navLinks` — header/footer navigation
 
 WhatsApp message templates live in `lib/whatsapp.ts`.
 
 ## Product images
 
-Real product photos are in `public/images/products/`:
+The real product photo is in `public/images/products/`:
 
-- `novira-150ml.jpg`
-- `novira-200ml.jpg`
-- `novira-combined.jpg` (both bottles together)
+- `novira-120ml.jpg`
 
-To swap in new photos later, replace these files (keep the same names) or update the paths in `lib/siteConfig.ts`.
+To swap in a new photo later, replace this file (keep the same name) or update the path in `lib/siteConfig.ts`.
 
 ## Build
 
