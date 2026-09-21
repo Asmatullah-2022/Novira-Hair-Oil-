@@ -18,18 +18,19 @@ export const siteConfig = {
   whatsapp: "923432646758",
   displayWhatsapp: "0343 2646758",
   intlWhatsapp: "+92 343 2646758",
-  title: "Novira Hair Oil | Premium 120ml Hair Care",
+  title: "Novira Hair Oil | 120ml Premium Hair Care",
   description:
-    "Novira Hair Oil 120ml — a premium, natural-inspired hair oil for all hair types. Order directly through WhatsApp with fast, easy checkout.",
+    "Discover Novira Hair Oil 120ml. Premium hair care for all hair types. Price Rs. 800 with Rs. 200 delivery. Order directly through WhatsApp.",
+  ogDescription: "Discover Novira Hair Oil 120ml. Order directly through WhatsApp.",
   keywords: [
     "Novira Hair Oil",
-    "Novira",
+    "Novira Hair Oil Pakistan",
+    "Novira Hair Oil 120ml",
+    "Novira Hair Oil price",
+    "Buy Novira Hair Oil",
+    "Novira Hair Oil online",
     "premium hair oil",
     "natural hair oil",
-    "hair oil Pakistan",
-    "120ml hair oil",
-    "hair care for all hair types",
-    "order hair oil on WhatsApp",
   ],
 };
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.ogDescription,
     url: siteConfig.domain,
     type: "website",
     locale: "en_PK",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.ogDescription,
     images: [heroImage.src],
   },
   icons: {
@@ -78,6 +78,7 @@ const productJsonLd = {
   name: product.name,
   description: product.description,
   image: `${siteConfig.domain}${product.image}`,
+  size: product.size,
   brand: {
     "@type": "Brand",
     name: siteConfig.brandShort,

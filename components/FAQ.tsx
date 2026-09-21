@@ -9,7 +9,7 @@ const faqs = [
     answer: "Novira Hair Oil is available on this website in a 120 ml bottle.",
   },
   {
-    question: "How much does Novira Hair Oil cost?",
+    question: "What is the price of Novira Hair Oil?",
     answer: "The product price is Rs. 800.",
   },
   {
