@@ -1,5 +1,4 @@
 import { MessageCircle } from "lucide-react";
-import { buildWhatsAppUrl, getOrderMessage } from "@/lib/whatsapp";
 
 export default function OrderCTA() {
   return (
@@ -12,14 +11,9 @@ export default function OrderCTA() {
         <p className="reveal mt-4 text-base text-novira-cream/75 sm:text-lg">
           Order Novira Hair Oil directly through WhatsApp.
         </p>
-        <a
-          href={buildWhatsAppUrl(getOrderMessage())}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="gold-btn reveal mt-8 w-full sm:w-auto"
-        >
+        <a href="#order" className="gold-btn reveal mt-8 w-full sm:w-auto">
           <MessageCircle className="h-5 w-5" />
-          Order Now on WhatsApp
+          Order Now
         </a>
       </div>
     </section>

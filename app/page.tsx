@@ -9,6 +9,7 @@ import Gallery from "@/components/Gallery";
 import About from "@/components/About";
 import Trust from "@/components/Trust";
 import OrderCTA from "@/components/OrderCTA";
+import OrderForm from "@/components/OrderForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -28,6 +29,7 @@ export default function Home() {
         <About />
         <Trust />
         <OrderCTA />
+        <OrderForm />
         <Contact />
       </main>
       <Footer />
