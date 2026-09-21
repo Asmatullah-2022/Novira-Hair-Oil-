@@ -14,6 +14,7 @@ const config: Config = {
         "novira-brown": "#2c211a",
         "novira-gold": "#c9a24b",
         "novira-gold-light": "#e6c878",
+        "novira-gold-dark": "#8a6a2c",
         "novira-cream": "#f7f1e6",
         "novira-beige": "#efe4d0",
       },

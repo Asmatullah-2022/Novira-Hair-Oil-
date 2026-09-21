@@ -63,7 +63,7 @@ export default function FAQ() {
                   >
                     {faq.question}
                     <ChevronDown
-                      className={`h-5 w-5 shrink-0 text-novira-gold transition-transform duration-300 ${
+                      className={`h-5 w-5 shrink-0 text-novira-gold-dark transition-transform duration-300 ${
                         isOpen ? "rotate-180" : ""
                       }`}
                     />

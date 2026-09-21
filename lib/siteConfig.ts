@@ -14,13 +14,23 @@ export const siteConfig = {
   brandName: "Novira Hair Oil",
   brandShort: "Novira",
   tagline: "Stronger. Thicker. Healthier.",
-  domain: "",
+  domain: "https://novira-hair-oil.vercel.app",
   whatsapp: "923432646758",
   displayWhatsapp: "0343 2646758",
   intlWhatsapp: "+92 343 2646758",
-  title: "Novira Hair Oil | Premium Hair Care",
+  title: "Novira Hair Oil | Premium 120ml Hair Care",
   description:
-    "Discover Novira Hair Oil 120 ml. Premium hair care for all hair types. Order directly through WhatsApp.",
+    "Novira Hair Oil 120ml — a premium, natural-inspired hair oil for all hair types. Order directly through WhatsApp with fast, easy checkout.",
+  keywords: [
+    "Novira Hair Oil",
+    "Novira",
+    "premium hair oil",
+    "natural hair oil",
+    "hair oil Pakistan",
+    "120ml hair oil",
+    "hair care for all hair types",
+    "order hair oil on WhatsApp",
+  ],
 };
 
 export const products: Product[] = [

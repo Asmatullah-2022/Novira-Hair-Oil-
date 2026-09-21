@@ -35,11 +35,11 @@ body {
 }
 
 .gold-btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-semibold uppercase tracking-wide text-novira-black shadow-gold transition-transform duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-novira-gold active:scale-[0.98];
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-semibold uppercase tracking-wide text-novira-black shadow-gold transition-transform duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-novira-gold-dark active:scale-[0.98];
 }
 
 .outline-btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-novira-gold/60 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-novira-cream transition-colors duration-300 hover:bg-novira-gold/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-novira-gold active:scale-[0.98];
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-novira-gold/60 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-novira-cream transition-colors duration-300 hover:bg-novira-gold/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-novira-gold-dark active:scale-[0.98];
 }
 
 .reveal {
@@ -52,6 +52,6 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid #c9a24b;
+  outline: 2px solid #8a6a2c;
   outline-offset: 2px;
 }
